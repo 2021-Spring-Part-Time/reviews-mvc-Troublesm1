@@ -13,7 +13,9 @@ public class ReviewRepository {
 
 
     public ReviewRepository(Review ...reviewToAdd) {
-        reviewsList.put(reviewToAdd.getId(), reviewToAdd);
+        for (Review review: reviewToAdd){
+            reviewsList.put(review.getId(), review);
+        }
     }
 
     public Review findOne(long id) {
@@ -21,6 +23,6 @@ public class ReviewRepository {
     }
 
     public Collection<Review> findAll() {
-        return null;
+        return reviewsList.values();
     }
 }

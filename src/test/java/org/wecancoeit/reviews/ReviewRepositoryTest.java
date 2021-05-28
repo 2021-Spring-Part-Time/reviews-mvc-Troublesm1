@@ -4,6 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import java.util.Collection;
 
+import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class ReviewRepositoryTest {
@@ -21,5 +22,6 @@ public class ReviewRepositoryTest {
         Review reviewTwo = new Review (2L, "review two name", "pic two", "review two category", "synopsis", "date");
         ReviewRepository underTest = new ReviewRepository(reviewOne, reviewTwo );
         Collection<Review> foundReviews = underTest.findAll();
+        assertThat(foundReviews).contains(reviewOne, reviewTwo);
     }
 }
