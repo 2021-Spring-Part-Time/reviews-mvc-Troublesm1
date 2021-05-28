@@ -2,8 +2,6 @@ package org.wecancoeit.reviews;
 
 public class Review {
 
-
-
     private Long id;
     private String review_one_name;
     private String pic_one;
@@ -13,6 +11,26 @@ public class Review {
 
     public Long getId() {
         return id;
+    }
+
+    public String getReview_one_name() {
+        return review_one_name;
+    }
+
+    public String getPic_one() {
+        return pic_one;
+    }
+
+    public String getCategory() {
+        return category;
+    }
+
+    public String getSynopsis() {
+        return synopsis;
+    }
+
+    public String getDate() {
+        return date;
     }
 
     public Review(long id, String review_one_name, String pic_one, String review_one_category, String synopsis, String date) {
