@@ -1,4 +1,12 @@
 package org.wecancoeit.reviews;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+
+@Controller
 public class ReviewController {
+
+    @Autowired
+    private MockMvc mockMvc;
+
 }
