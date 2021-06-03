@@ -11,6 +11,19 @@ public class ReviewRepository {
 
     Map<Long, Review> reviewsList = new HashMap<>();
 
+    public ReviewRepository(){
+        Review A = new Review(1L,"CompTIA A+", "Image1","IT Basics","Introduction to All things IT","April 2019");
+        Review B = new Review(2L,"CompTIA Network+", "Image2","Computer Networking Basics","Introduction to Computer Networking"," December 2019");
+        Review C = new Review(3L,"CompTIA Security+", "Image3","Cyber Security Basics","Cyber security basics","December 2020");
+        Review D = new Review(4L,"AWS Cloud Practitioner", "Image4","Amazon Web Services","Introduction to AWS Cloud"," March 2021");
+
+        reviewsList.put(A.getId(), A);
+        reviewsList.put(B.getId(), B);
+        reviewsList.put(C.getId(), C);
+        reviewsList.put(D.getId(), D);
+
+    }
+
     public ReviewRepository(Review ...reviewToAdd) {
         for (Review review: reviewToAdd){
             reviewsList.put(review.getId(), review);
