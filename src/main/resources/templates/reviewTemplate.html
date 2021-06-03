@@ -13,15 +13,13 @@
 <header>
     <h1 th:text="${reviewModel.name}">A Review</h1>
     <nav>
-        <p><a href="/reviews">Reviews</a></p>
-        <button>CompTIA</button>
-        <button>AWS</button>
+        <p><a href="/reviews">Home</a></p>
     </nav>
 </header>
 
 <main>
     <section>
-        <img class="sectionImg" th:src="${reviewModel.pic}" alt="Picture of computer screen"/>
+        <img class="sectionImg" th:src="${reviewModel.pic}"/>
     </section>
     <h2 th:text="${reviewModel.category}"></h2>
     <h4 th:text="${reviewModel.synopsis}"></h4>

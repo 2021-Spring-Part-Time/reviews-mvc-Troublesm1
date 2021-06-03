@@ -10,10 +10,11 @@
 
 header {
   align-items: center;
-  background-color: #777;
   display: flex;
   justify-content: space-between;
   padding: 16px;
+  border: 1px solid #e7e7e7;
+  background-color: #f3f3f3;
 }
 
 nav button {
@@ -49,7 +50,7 @@ nav button:hover {
 main{
  background-color: #ddd;
  display: grid;
- grid-template-columns: 1fr 1fr 1fr; /*you will control columns MORE often than the rows*/
+ grid-template-columns: 1fr 1fr 1fr;
  grid-gap: 10px;
  padding: 25px;
  text-align: center;
@@ -57,4 +58,8 @@ main{
 section{
   background-color: #444;
   border-radius: 8px;
+}
+li{
+background: #cce5ff;
+margin: 5px;
 }
