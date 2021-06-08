@@ -1,0 +1,65 @@
+
+.container {
+  background-color: #999;
+  border-radius: 8px;
+  height: 80vh;
+  margin: auto;
+  padding: 20px;
+  width: 80%;
+}
+
+header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  border: 1px solid #e7e7e7;
+  background-color: #f3f3f3;
+}
+
+nav button {
+background-color: black;
+border-radius: 8px;
+color: white;
+font-size: 16px;
+padding: 5px;
+}
+
+nav button:hover {
+    background-color: #888;
+    transition: 0.5;
+}
+#images {
+  border-radius: 8px;
+  height: auto;
+  margin-top: 10px;
+  width: 75%;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+.sectionImg{
+  border-radius: 8px;
+  height: auto;
+  margin-top: 10px;
+  width: 75%;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+main{
+ background-color: #ddd;
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+ grid-gap: 10px;
+ padding: 25px;
+ text-align: center;
+}
+section{
+  background-color: #444;
+  border-radius: 8px;
+}
+li{
+background: #cce5ff;
+margin: 5px;
+}
